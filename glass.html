@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Learning CSS | Glass!!</title>
+        <style>
+          *{
+          	margin: 0;
+          	padding: 0;
+          	box-sizing: border-box;
+          }
+          body{
+          	display: flex;
+          	justify-content: center;
+          	align-items: center;
+            background-image: linear-gradient(rgba(128, 115, 115, 0.2), rgba(235, 217, 217, 0.19));
+          }
+          #top{
+            border-radius: 5px 5px 100px 100px;
+            background-image: linear-gradient(#ffffff, #ccf8fa);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+          }
+          #stem{
+            border-radius: 0 0 5px 5px;
+            background-image: linear-gradient(to left,#ffffff, #ccf8fa);
+            box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 0 0 -12px 95px;
+            padding: 0px 5px;
+            width: 10px;
+            height: 220px;
+            position: relative;
+            z-index: 1; 
+          }
+          #base{
+            border-radius: 50%;
+            background: white;
+            background-image: radial-gradient(#ffffff, #87cdd1);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-left: 8px;
+            padding: 10px;
+            width: 190px;
+            height: 10px;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="glass">
+          <div id="top"></div>
+          <div id="stem"></div>
+          <div id="base"></div>
+        </div>
+    </body>
+</html>

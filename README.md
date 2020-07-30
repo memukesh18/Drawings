@@ -1,2 +1,2 @@
-## css-magic
-### Designing various things using HTML and CSS
+## About
+Drawing various things using HTML and CSS

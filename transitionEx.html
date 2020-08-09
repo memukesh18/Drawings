@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Learning CSS | Transition!!</title>
+        <style>
+          div{
+            width: 100px;
+            height: 100px;
+            background: darkred;
+            transition: width 2s;
+          }
+          .lnr{transition-timing-function: linear;}
+          .ese{transition-timing-function: ease;}
+          .ese-in{transition-timing-function: ease-in;}
+          .ese-out{transition-timing-function: ease-out;}
+          .ese-in-out{transition-timing-function: ease-in-out;}
+
+          div:hover{
+            width: 500px;
+          }
+          .trf{
+            transition: width 2s, height 2s, transform 2s;
+          }
+          .trf:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+          }
+        </style>
+    </head>
+    <body>
+        <h2>The transition Property</h2>
+        
+        <h3>Linear</h3>
+        <div class="lnr"></div>
+        <h3>Ease</h3>
+        <div class="ese"></div>
+        <h3>Ease In</h3>
+        <div class="ese-in"></div>
+        <h3>Ease Out</h3>
+        <div class="ese-out"></div>
+        <h3>Ease In Out</h3>
+        <div class="ese-in-out"></div>
+        <h3>transition + Transform</h3>
+        <div class="trf"></div>
+    </body>
+</html>

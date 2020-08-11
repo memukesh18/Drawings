@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Learning CSS | bird!!</title>
+        <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgb(148, 147, 143);
+          }
+          .bird{
+            position: absolute;
+            height: 93px;
+            width: 150px;
+            background: linear-gradient(#dadf93 41%, #7b8a39);
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            transform: rotate(22deg) translate(-50%, -50%);
+          }
+          .bird::before{
+            content: '';
+            position: absolute;
+            width: 340px;
+            height: 199px;
+            top: -45%;
+            left: -45%;
+            background-repeat: no-repeat;
+            background-image: 
+                  radial-gradient(ellipse at 45% 0%,#dadf93 55%, #dadf93 53%, #7b8a39 61%, transparent -5%),
+                  radial-gradient(circle, #582522 50%, transparent 50%),
+                  radial-gradient(ellipse at 50% 70%, #dadf93 67%, transparent 52%),
+                  linear-gradient(12deg,transparent 45%,#582522 45%),
+                  linear-gradient(-10deg,transparent 53%,#7b8a39 40% ,#dadf93 60%),
+                  linear-gradient(1deg,#582522 ,#582522 ),
+                  linear-gradient(1deg,#582522 ,#582522 ),
+                  linear-gradient(1deg,#582522 ,#582522 ),
+                  linear-gradient(1deg,#582522 ,#582522 );
+            background-size: 
+                  165px 45px,
+                  18px 17px,
+                  80px 60px,
+                  27px 10px,
+                  160px 48px,
+                  3px 20px,
+                  3px 28px,
+                  8px 2px,
+                  8px 2px;
+            background-position: 
+                  100px 70px,
+                  78px 45px,
+                  62px 20px,
+                  40px 55px,
+                  180px 48px,
+                  167px 132px,
+                  185px 120px,
+                  180px 148px,
+                  161px 150px;
+          }
+        </style>
+    </head>
+    <body>
+      <div class="bird"></div>
+    </body>
+</html>

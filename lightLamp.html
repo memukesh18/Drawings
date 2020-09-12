@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Learning CSS || Light Lamp </title>
+        <style>
+            
+            .lightLamp {
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                width: 111px;
+                height: 160px;
+                background: #e98e229e;
+                box-shadow: inset -7px 1px 20px 0px #a45b0f, inset -14px 2px 0px 0px #a56629, 5px 0px 9px 0px #97918b;
+                border-radius: 50%;
+            }
+
+            .lightLamp::before {
+                content: '';
+                position: absolute;
+                width: 138px;
+                height: 37px;
+                top: 58px;
+                left: -80px;
+                background-repeat: no-repeat;
+                background-image: linear-gradient(#c5803a, #f2bf82), linear-gradient(#d4d5d5, #d4d5d5);
+                background-size: 108px 51px, 45px 26px;
+                background-position: 30px 0px, -4px 5px;
+                border-radius: 92px;
+                filter: drop-shadow(4px 7px 11px #b59069);
+            }
+
+            .lightLamp::after {
+                content: '';
+                position: absolute;
+                width: 216px;
+                height: 236px;
+                left: -257px;
+                top: 47px;
+                background-image: radial-gradient(ellipse at 50% 0%, #eaeef9 55%, #e1e1e1bd 53%, #cacad4 59%, transparent -5%), radial-gradient(ellipse at 45% 61%, #eeeeee 55%, #ffffff6b 57%, #7a7b8000 58%, transparent -5%), linear-gradient(90deg, rgba(21, 21, 23, 1) 40%, rgba(21, 21, 23, 1) 4%, rgba(21, 21, 23, 1) 60%, rgba(55, 51, 50, 1) 85%, rgba(55, 51, 50, 1) 100%), linear-gradient(90deg, rgba(21, 21, 23, 1) 40%, rgba(21, 21, 23, 1) 4%, rgba(21, 21, 23, 1) 50%, rgba(55, 51, 50, 1) 76%, rgba(55, 51, 50, 1) 100%);
+                background-size: 90px 46px, 243px 69px, 64px 46px, 228px 213px;
+                background-repeat: no-repeat;
+                transform: rotate(39deg);
+                background-position: 59px 182px, -2px 171px, 75px 0px, 0px 45px;
+                clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+                border-top-left-radius: 178px;
+                border-top-right-radius: 178px;
+                border-bottom-right-radius: 120px 59px;
+                border-bottom-left-radius: 120px 69px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="lightLamp"></div>
+    </body>
+</html>

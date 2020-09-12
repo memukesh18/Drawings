@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Learning CSS || Night Sky</title>
+        <style>            
+            .landscape-container {
+                position: relative;
+                height: 100%;
+                margin: 0 auto;
+                background: radial-gradient(circle, rgba(28,81,151,1) 37%, rgba(27,28,108,1) 73%, rgba(27,20,100,1) 91%);
+            }
+
+            .landscape-container::after {
+                content: " ";
+                position: absolute;
+                width: 2px;
+                height: 2px;
+                top : 0;
+                background: transparent;
+                box-shadow: 354px 154px #5be1ff, 410px 154px #5be1ff, 489px 130px #5be1ff, 354px 220px #5be1ff, 497px 193px #5be1ff, 378px 262px #5be1ff, 516px 154px #5be1ff, 495px 80px #5be1ff, 478px 338px #5be1ff, 477px 393px #5be1ff, 464px 454px #5be1ff, 495px 434px #5be1ff, 495px 496px #5be1ff, 495px 334px #5be1ff, 564px 434px #5be1ff, 579px 420px #5be1ff, 606px 434px #5be1ff, 934px 434px #5be1ff, 895px 434px #5be1ff, 995px 450px #5be1ff, 911px 451px #5be1ff, 895px 480px #5be1ff, 995px 234px #5be1ff, 1021px 226px #5be1ff, 1095px 195px #5be1ff, 1057px 198px #5be1ff, 995px 112px #5be1ff, 1025px 103px #5be1ff, 995px 88px #5be1ff, 995px 174px #5be1ff, 995px 147px #5be1ff, 872px 112px #5be1ff, 795px 112px #5be1ff, 695px 112px #5be1ff, 695px 64px #5be1ff, 795px 29px #5be1ff, 715px 137px #5be1ff, 682px 155px #5be1ff, 1163px 137px #5be1ff, 1199px 104px #5be1ff, 1245px 109px #5be1ff, 163px 137px #5be1ff, 163px 537px #5be1ff, 126px 458px #5be1ff, 336px 538px #5be1ff, 1128px 540px #5be1ff,1169px 547px #5be1ff,1076px 526px #5be1ff,1175px 411px #5be1ff,1195px 345px #5be1ff
+            }
+
+            .landscape-sun {
+                position: absolute;
+                background-color: #F8FCFB;
+                width: 240px;
+                height: 240px;
+                right: 50%;
+                top: 25%;
+                border-radius: 100%;
+                box-shadow: 0px 0px 20px 10px #7cc0e3, 0px 0px 20px 40px #7bbfe4c4, 0px 0px 18px 100px #50b1de4a, 0px 0px 20px 160px #2a7dbb7d;
+            }
+
+            .landscape-sun::after{
+                content: '';
+                position: absolute;
+                z-index: -9;
+                width: 167px;
+                height: 179px;
+                left: 36%;
+                top: 50%;
+                z-index: 999;
+                background-image: 
+                    radial-gradient(circle closest-side, #000 78%, #000 98%, transparent 5%),
+                    radial-gradient(circle closest-side, #000 78%, #000 98%, transparent 5%),
+                    radial-gradient(ellipse,black 50%,transparent 50%),
+                    radial-gradient(ellipse,black 50%,transparent 50%),
+                    linear-gradient(black,black),
+                    linear-gradient(black,black);;
+                background-repeat: no-repeat;
+                background-size: 
+                    20px 20px, 
+                    20px 20px, 
+                    39px 65px, 
+                    39px 65px, 
+                    15px 20px, 
+                    15px 20px;
+                background-position: 
+                    67px 76px, 
+                    31px 76px, 
+                    22px 82px, 
+                    58px 82px, 
+                    68px 139px, 
+                    35px 145px;
+            }
+
+            .landscape-branch {
+                position: absolute;
+                width: 52%;
+                height: 49px;
+                top: 50%;
+                border-bottom: 32px solid #000000;
+                border-bottom-right-radius: 100% 100%;
+                transform-origin: 0% 100%;
+                z-index: 99;
+            }
+
+
+            .landscape-branch::before {
+                content: '';
+                width: 133px;
+                height: 16px;
+                position: absolute;
+                background: #000;
+                border-bottom-right-radius: 100% 100%;
+                left: 96px;
+                top: 46px;
+                transform: rotate(-60deg);
+                transform-origin: 0% 100%;
+            }
+            .landscape-branch::after {
+                content: '';
+                width: 133px;
+                height: 16px;
+                position: absolute;
+                background: #000;
+                border-bottom-right-radius: 100% 100%;
+                left: 196px;
+                top: 46px;
+                transform: rotate(60deg);
+                transform-origin: 0% 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="landscape-container">
+            <div class="landscape-sun"></div>
+            <div class="landscape-branch"></div>
+        </div>
+    </body>
+</html>
